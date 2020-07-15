@@ -55,7 +55,7 @@ namespace E_Players_AspNETCore.Models
                 noticias.Texto = linha[2];
                 noticias.Imagem = linha[3];
 
-                Noticias.Add(noticia);
+                noticia.Add(noticias);
                 
             }
             return noticia;
