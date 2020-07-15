@@ -20546,6 +20546,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\duart\\OneDrive\\Área de Trabalho\\aulas do senai\\POO\\E-Players_AspNETCore\\Views\\Noticias\\Index.cshtml",
+      "TargetPath": "Views\\Noticias\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\duart\\OneDrive\\Área de Trabalho\\aulas do senai\\POO\\E-Players_AspNETCore\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -20553,6 +20558,11 @@
     {
       "FilePath": "c:\\Users\\duart\\OneDrive\\Área de Trabalho\\aulas do senai\\POO\\E-Players_AspNETCore\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\duart\\OneDrive\\Área de Trabalho\\aulas do senai\\POO\\E-Players_AspNETCore\\Views\\Equipe\\Index.cshtml",
+      "TargetPath": "Views\\Equipe\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],

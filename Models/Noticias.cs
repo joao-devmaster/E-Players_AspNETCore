@@ -3,6 +3,8 @@ using E_Players_AspNETCore.Interface;
 using System;
 using System.IO;
 
+
+
 namespace E_Players_AspNETCore.Models
 {
     public class Noticias : EPlayersBase , INoticias
@@ -54,6 +56,7 @@ namespace E_Players_AspNETCore.Models
                 noticias.Imagem = linha[3];
 
                 Noticias.Add(noticia);
+                
             }
             return noticia;
             

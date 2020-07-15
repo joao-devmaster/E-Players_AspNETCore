@@ -1,0 +1,7 @@
+C:\Users\duart\OneDrive\Área de Trabalho\aulas do senai\POO\E-Players_AspNETCore\obj\Debug\netcoreapp3.1\E-Players_AspNETCore.csprojAssemblyReference.cache
+C:\Users\duart\OneDrive\Área de Trabalho\aulas do senai\POO\E-Players_AspNETCore\obj\Debug\netcoreapp3.1\E-Players_AspNETCore.csproj.CoreCompileInputs.cache
+C:\Users\duart\OneDrive\Área de Trabalho\aulas do senai\POO\E-Players_AspNETCore\obj\Debug\netcoreapp3.1\E-Players_AspNETCore.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\duart\OneDrive\Área de Trabalho\aulas do senai\POO\E-Players_AspNETCore\obj\Debug\netcoreapp3.1\E-Players_AspNETCore.RazorAssemblyInfo.cache
+C:\Users\duart\OneDrive\Área de Trabalho\aulas do senai\POO\E-Players_AspNETCore\obj\Debug\netcoreapp3.1\E-Players_AspNETCore.RazorAssemblyInfo.cs
+C:\Users\duart\OneDrive\Área de Trabalho\aulas do senai\POO\E-Players_AspNETCore\obj\Debug\netcoreapp3.1\E-Players_AspNETCore.AssemblyInfoInputs.cache
+C:\Users\duart\OneDrive\Área de Trabalho\aulas do senai\POO\E-Players_AspNETCore\obj\Debug\netcoreapp3.1\E-Players_AspNETCore.AssemblyInfo.cs
