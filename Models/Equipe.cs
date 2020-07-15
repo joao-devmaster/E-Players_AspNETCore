@@ -28,11 +28,14 @@ namespace E_Players_AspNETCore.Models
             return $" {e.IdEquipe};{e.Nome};{e.Imagem}";
         }
 
-
-        public void Delete(int id)
+/// <summary>
+/// 
+/// </summary>
+/// <param name="IdEquipe"></param>
+        public void Delete(int IdEquipe)
         {
            List<string> linhas = ReadAllLinesCSV(PATH);
-           linhas.RemoveAll(x => x.Split(";")[0] == id.ToString());
+           linhas.RemoveAll(x => x.Split(";")[0] == IdEquipe.ToString());
            RewriteCSV(PATH, linhas);
         }
 

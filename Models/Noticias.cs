@@ -33,7 +33,10 @@ namespace E_Players_AspNETCore.Models
         }
 
 
-
+/// <summary>
+/// Deletar arquivo usando ID como parametro.
+/// </summary>
+/// <param name="id"></param>
         public void Delete(int id)
         {
             List<string> linhas = ReadAllLinesCSV(PATH);
