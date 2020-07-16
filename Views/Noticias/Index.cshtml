@@ -1,5 +1,29 @@
 
-<table class="table table-striped">
+   
+   
+@model Noticias
+    @{
+        ViewData["Title"] = "Noticias";
+    }
+
+   <form method="POST" action='@Url.Action("Adicionar")' enctype="multipart/form-data" >
+    <label>ID</label>
+    <input type="text" name="IdNoticia" id="IDNoticia" />
+
+    <label>Titulo</label>
+    <input type="text" name="Nome" id="Nome" />
+
+    <label>Texto</label>
+    <input type="text" name="Texto" id="Texto" />
+
+     <label>Imagem</label>
+    <input type="file" name="Imagem" id="Imagem" />
+
+    <button type="submit">Adicionar</button>
+</form>
+
+
+<table class="table table-responsive table-striped">
     <thead>
         <th>Id</th>
         <th>Titulo</th>
@@ -7,13 +31,18 @@
         <th>Imagem</th>
     </thead>
     <tbody>
-        @foreach (var item in ViewBag.Noticias)
+        @foreach (var n in ViewBag.Noticias)
         {
             <tr>
-                <td>@item.IdNoticia</td>
-                <td>@item.Titulo</td>
-                <td>@item.Texto</td>
-                <td>@item.Imagem</td>
+                <td>@n.IdNoticia</td>
+                <td>@n.Titulo</td>
+                <td>@n.Texto</td>
+                <td>
+                    <img src="img/Noticia/@n.Imagem" alt="imagem da noticia @n.Titulo">
+                </td>
+                <td>
+                     <a asp-area="" asp-controller= "Noticia" asp-action="Excluir" asp-route-id= "@n.IdNoticia">Excluir</a>
+                </td>
             </tr>
         }
     </tbody>

@@ -4,14 +4,15 @@
     }
 
     <form method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data" >
-    <label>ID</label>
-    <input type="text" name="IdEquipe" />
 
-    <label>Nome</label>
-    <input type="text" name="Nome" />
+    <label for="IDEquipe"> IDEquipe</label>
+    <input type="text" name="IdEquipe" id="IDEquipe" />
 
-    <label>Imagem</label>
-    <input type="file" name="Imagem" />
+    <label for="Nome">Nome</label>
+    <input type="text" name="Nome" id="Nome" />
+
+    <label for="Imagem">Imagem</label>
+    <input type="file" name="Imagem" id="Imagem" />
 
     <button type="submit">Cadastrar</button>
 </form>
@@ -20,7 +21,7 @@
     <thead>
         <th>ID</th>
         <th>Nome</th>
-        <th>Foto</th>
+        <th>Imagem</th>
     </thead>
     <tbody>
         @foreach(Equipe e in ViewBag.Equipes){
