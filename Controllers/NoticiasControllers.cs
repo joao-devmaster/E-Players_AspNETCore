@@ -27,17 +27,17 @@ namespace E_PLAYERS.Controllers
         /// <returns></returns>
         public IActionResult Adicionar(IFormCollection form)
         {
-            Noticias noticias = new Noticias();
-            noticias.IdNoticia = Int32.Parse( form["IdNoticia"]);
-            noticias.Titulo   = form["Titulo"];
-            noticias.Texto    = form["Texto"];
+            Noticias news = new Noticias();
+            news.IdNoticia = Int32.Parse( form["IdNoticia"]);
+            news.Titulo   = form["Titulo"];
+            news.Texto    = form["Texto"];
             // inicio do upload da imagem
-            noticias.Imagem   = form["Imagem"];
+            news.Imagem   = form["Imagem"];
 
             
            
             var file    = form.Files[0];
-            var folder  = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/Noticia"); // tirei o a
+            var folder  = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/Noticias"); 
 
             if(file != null)
             {
@@ -50,26 +50,26 @@ namespace E_PLAYERS.Controllers
                 {  
                     file.CopyTo(stream);  
                 }
-                noticias.Imagem   = file.FileName;
+                news.Imagem   = file.FileName;
             }
             else
             {
-                noticias.Imagem   = "padrao.png";
+                news.Imagem   = "padrao.png";
             }
             // fim do upload da imagem
 
-            noticiasModel.Create(noticias);
+            noticiasModel.Create(news);
             
             ViewBag.Noticias = noticiasModel.ReadAll();
             return LocalRedirect("~/Noticias");
         }
 
-              [Route("Noticia/{id}")]
+              [Route("Noticias/{id}")]
 
-        public IActionResult Excluir(int id)
+        public IActionResult Excluir(int id)  
         {
             noticiasModel.Delete(id);
-            return LocalRedirect("~/Noticia");
+            return LocalRedirect("~/Noticias");
 
         }
     }

@@ -37,31 +37,31 @@ namespace E_Players_AspNETCore.Models
 /// Deletar arquivo usando ID como parametro.
 /// </summary>
 /// <param name="id"></param>
-        public void Delete(int id)
+        public void Delete(int IdNoticia)
         {
             List<string> linhas = ReadAllLinesCSV(PATH);
-           linhas.RemoveAll(x => x.Split(";")[0] == id.ToString());
+           linhas.RemoveAll(x => x.Split(";")[0] == IdNoticia.ToString());
            RewriteCSV(PATH, linhas);
             
         }
 
         public List<Noticias> ReadAll()
         {
-             List<Noticias> noticia = new List<Noticias>();
+             List<Noticias> news = new List<Noticias>();
             string[] linhas = File.ReadAllLines(PATH);
             foreach (var item in linhas)
             {
                 string[] linha = item.Split(";");
-                Noticias noticias = new Noticias();
-                noticias.IdNoticia = Int32.Parse(linha[0]);
-                noticias.Titulo = linha[1];
-                noticias.Texto = linha[2];
-                noticias.Imagem = linha[3];
+                Noticias noticia = new Noticias();
+                noticia.IdNoticia = Int32.Parse(linha[0]);
+                noticia.Titulo = linha[1];
+                noticia.Texto = linha[2];
+                noticia.Imagem = linha[3];
 
-                noticia.Add(noticias);
+                news.Add(noticia);
                 
             }
-            return noticia;
+            return news;
             
         }
 

@@ -67,12 +67,11 @@ namespace E_Players.Controllers
 /// <param name="id"></param>
 /// <returns></returns>
         [Route("Equipe/{id}")]
-
-        public IActionResult Excluir(int id)
+         public IActionResult Excluir(int id)
         {
-            equipe1model.Delete(id);
+           equipe1model.Delete(id);
+           
             return LocalRedirect("~/Equipe");
-
         }
     }
 

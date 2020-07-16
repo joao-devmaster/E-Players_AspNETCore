@@ -25,20 +25,16 @@
     </thead>
     <tbody>
         @foreach(Equipe e in ViewBag.Equipes){
-            <tr>
-                <td>@e.IdEquipe</td>
-                <td>@e.Nome</td>
-                <td>
-                    <img src="img/Equipes/@e.Imagem" alt="imagem da equipe @e.Nome">
-                </td>
-                <td>
-                     <a asp-area="" asp-controller= "Equipe" asp-action="Excluir" asp-route-id= "@e.IdEquipe">Excluir</a>
-
-                </td>
+         <tr>
+             <td>@e.IdEquipe</td>
+             <td>@e.Nome</td>
+            <td><img src="img/Equipes/@e.Imagem" alt="Imagem da equipe @e.Nome" width="40"></td>
+             <td><a asp-asp-area="" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@e.IdEquipe">Excluir</a></td>
+         </tr>
+ 
+           
 
 
-               
-            </tr>
         }
     </tbody>
 </table>
